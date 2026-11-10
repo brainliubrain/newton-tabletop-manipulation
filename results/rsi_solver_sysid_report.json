@@ -1,0 +1,49 @@
+{
+  "framework": "Embodied Robotics Sim Solver Contact SysID RSI",
+  "solver": "Newton 1.7.0 + SolverMuJoCo (CUDA)",
+  "iterations": [
+    {
+      "round": 0,
+      "ke": 2500.0,
+      "kd": 100.0,
+      "telemetry": {
+        "ke": 2500.0,
+        "kd": 100.0,
+        "final_z": 0.391411,
+        "penetration_mm": 8.59,
+        "max_dynamic_penetration_mm": 8.59,
+        "final_vel_z_m_s": 0.02489,
+        "solref_timeconst_s": 20.0,
+        "solref_dampratio": 1.054,
+        "nan_detected": false
+      },
+      "time_ms": 5847.5
+    },
+    {
+      "round": 1,
+      "ke": 2000000.0,
+      "kd": 4239.584885339602,
+      "telemetry": {
+        "ke": 2000000.0,
+        "kd": 4239.584885339602,
+        "final_z": 0.399782,
+        "penetration_mm": 0.22,
+        "max_dynamic_penetration_mm": 0.28,
+        "final_vel_z_m_s": 0.00033,
+        "solref_timeconst_s": 0.4717,
+        "solref_dampratio": 1.58,
+        "nan_detected": false
+      },
+      "time_ms": 982.0
+    }
+  ],
+  "converged": true,
+  "total_wall_time_s": 8.885,
+  "final_config": {
+    "CONTACT_KE": 2000000.0,
+    "CONTACT_KD": 4239.584885339602,
+    "final_penetration_mm": 0.22,
+    "solref_dampratio": 1.58
+  },
+  "timestamp": "2026-11-10 15:29:38"
+}

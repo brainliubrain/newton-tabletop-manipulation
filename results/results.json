@@ -1,0 +1,51 @@
+{
+  "task": "tabletop pick-place: bowl + cup into tray (kitless Newton, FR3, scripted IK agent)",
+  "episodes": 1,
+  "successes": 1,
+  "success_rate": 1.0,
+  "min_success_required": 0.66,
+  "passed": true,
+  "wall_time_s": 22.6,
+  "records": [
+    {
+      "seed": 0,
+      "outcome": "success",
+      "success_frame": 1288,
+      "frames": 1289,
+      "grasped": {
+        "bowl": true,
+        "cup": true
+      },
+      "final_poses": {
+        "bowl": [
+          0.568,
+          0.0198,
+          0.4079,
+          0.0001,
+          -0.0002,
+          0.9997,
+          0.024
+        ],
+        "cup": [
+          0.6787,
+          0.0191,
+          0.4502,
+          0.0002,
+          0.0003,
+          -0.9606,
+          -0.2779
+        ]
+      },
+      "spawn_poses": {
+        "bowl": [
+          0.4029,
+          -0.0741
+        ],
+        "cup": [
+          0.4655,
+          0.2137
+        ]
+      }
+    }
+  ]
+}

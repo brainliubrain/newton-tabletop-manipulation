@@ -1,0 +1,119 @@
+{
+  "parameter": "GRIP_CLOSED['bowl']",
+  "eval_seeds": [
+    0,
+    1,
+    2
+  ],
+  "sweep_results": [
+    {
+      "g_closed_mm": 22.0,
+      "success_rate": 0.0,
+      "mean_slip_mm": 50.0,
+      "unpicked_count": 3,
+      "mean_landing_err_mm": 999.0,
+      "mean_tilt_deg": 90.0,
+      "normal_force_N": 0.55,
+      "hardstop_margin_mm": 14.0,
+      "ejections_count": 0,
+      "composite_cost": 215.0
+    },
+    {
+      "g_closed_mm": 18.0,
+      "success_rate": 0.0,
+      "mean_slip_mm": 50.0,
+      "unpicked_count": 3,
+      "mean_landing_err_mm": 999.0,
+      "mean_tilt_deg": 90.0,
+      "normal_force_N": 0.95,
+      "hardstop_margin_mm": 10.0,
+      "ejections_count": 0,
+      "composite_cost": 215.0
+    },
+    {
+      "g_closed_mm": 14.0,
+      "success_rate": 0.667,
+      "mean_slip_mm": 11.67,
+      "unpicked_count": 0,
+      "mean_landing_err_mm": 9.51,
+      "mean_tilt_deg": 0.02,
+      "normal_force_N": 1.35,
+      "hardstop_margin_mm": 6.0,
+      "ejections_count": 0,
+      "composite_cost": 45.96
+    },
+    {
+      "g_closed_mm": 13.0,
+      "success_rate": 1.0,
+      "mean_slip_mm": 0.0,
+      "unpicked_count": 0,
+      "mean_landing_err_mm": 8.48,
+      "mean_tilt_deg": 0.03,
+      "normal_force_N": 1.45,
+      "hardstop_margin_mm": 5.0,
+      "ejections_count": 0,
+      "composite_cost": 0.86
+    },
+    {
+      "g_closed_mm": 12.5,
+      "success_rate": 1.0,
+      "mean_slip_mm": 0.0,
+      "unpicked_count": 0,
+      "mean_landing_err_mm": 8.02,
+      "mean_tilt_deg": 0.02,
+      "normal_force_N": 1.5,
+      "hardstop_margin_mm": 4.5,
+      "ejections_count": 0,
+      "composite_cost": 0.81
+    },
+    {
+      "g_closed_mm": 12.0,
+      "success_rate": 1.0,
+      "mean_slip_mm": 0.0,
+      "unpicked_count": 0,
+      "mean_landing_err_mm": 7.93,
+      "mean_tilt_deg": 0.03,
+      "normal_force_N": 1.55,
+      "hardstop_margin_mm": 4.0,
+      "ejections_count": 0,
+      "composite_cost": 0.81
+    },
+    {
+      "g_closed_mm": 10.0,
+      "success_rate": 1.0,
+      "mean_slip_mm": 0.0,
+      "unpicked_count": 0,
+      "mean_landing_err_mm": 8.07,
+      "mean_tilt_deg": 0.01,
+      "normal_force_N": 1.75,
+      "hardstop_margin_mm": 2.0,
+      "ejections_count": 0,
+      "composite_cost": 0.81
+    },
+    {
+      "g_closed_mm": 8.5,
+      "success_rate": 1.0,
+      "mean_slip_mm": 0.0,
+      "unpicked_count": 0,
+      "mean_landing_err_mm": 7.36,
+      "mean_tilt_deg": 0.02,
+      "normal_force_N": 1.9,
+      "hardstop_margin_mm": 0.5,
+      "ejections_count": 0,
+      "composite_cost": 224.83
+    },
+    {
+      "g_closed_mm": 7.0,
+      "success_rate": 1.0,
+      "mean_slip_mm": 0.0,
+      "unpicked_count": 0,
+      "mean_landing_err_mm": 7.35,
+      "mean_tilt_deg": 0.03,
+      "normal_force_N": 2.05,
+      "hardstop_margin_mm": -1.0,
+      "ejections_count": 0,
+      "composite_cost": 1005.03
+    }
+  ],
+  "generated_at": "2026-11-10 04:30:20"
+}

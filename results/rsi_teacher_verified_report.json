@@ -1,0 +1,60 @@
+{
+  "framework": "Embodied Robotics Sim Adaptive Single-Parameter RSI Pipeline",
+  "supervisor": "TeacherAntiHackingSupervisor",
+  "optimized_parameter": "GRIP_CLOSED['bowl']",
+  "anti_reward_hacking_passed": true,
+  "evolution_timeline": [
+    {
+      "round": 0,
+      "g_closed_m": 0.022,
+      "g_closed_mm": 22.0,
+      "metrics": {
+        "success_rate": 0.0,
+        "mean_slip_mm": 50.0,
+        "max_slip_mm": 50.0,
+        "unpicked_count": 5
+      }
+    },
+    {
+      "round": 1,
+      "g_closed_m": 0.018,
+      "g_closed_mm": 18.0,
+      "metrics": {
+        "success_rate": 0.0,
+        "mean_slip_mm": 47.0,
+        "max_slip_mm": 50.0,
+        "unpicked_count": 4
+      }
+    },
+    {
+      "round": 2,
+      "g_closed_m": 0.014,
+      "g_closed_mm": 14.0,
+      "metrics": {
+        "success_rate": 0.8,
+        "mean_slip_mm": 7.0,
+        "max_slip_mm": 35.0,
+        "unpicked_count": 0
+      }
+    },
+    {
+      "round": 3,
+      "g_closed_m": 0.0125,
+      "g_closed_mm": 12.5,
+      "metrics": {
+        "success_rate": 1.0,
+        "mean_slip_mm": 0.0,
+        "max_slip_mm": 0.0,
+        "unpicked_count": 0
+      }
+    }
+  ],
+  "final_parameter_mm": 12.5,
+  "held_out_test_metrics": {
+    "success_rate": 1.0,
+    "mean_slip_mm": 0.0,
+    "max_slip_mm": 0.0,
+    "unpicked_count": 0
+  },
+  "verified_at": "2026-11-10 03:44:51"
+}

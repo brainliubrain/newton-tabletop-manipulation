@@ -1,0 +1,152 @@
+{
+  "agent": "SolverContactRSIAgent",
+  "framework": "Newton 1.7.0 + SolverMuJoCo (CUDA)",
+  "wall_time_s": 8.75,
+  "timestamp": "2026-11-10 15:31:59",
+  "results": [
+    {
+      "object_name": "陶瓷餐碗 (Ceramic Bowl on Table)",
+      "mass_kg": 0.35,
+      "converged": true,
+      "total_rounds": 2,
+      "final_ke": 2000000.0,
+      "final_kd": 4239.584885339602,
+      "final_penetration_mm": 0.218,
+      "final_dampratio": 1.58,
+      "history": [
+        {
+          "round": 0,
+          "ke": 2500.0,
+          "kd": 100.0,
+          "telemetry": {
+            "ke": 2500.0,
+            "kd": 100.0,
+            "mass_kg": 0.35,
+            "final_z": 0.39141,
+            "penetration_mm": 8.59,
+            "max_dynamic_penetration_mm": 8.59,
+            "rebound_peak_mm": 0.0,
+            "final_vel_z_m_s": 0.02515,
+            "residual_kinetic_energy_uj": 110.65,
+            "solref_timeconst_s": 20.0,
+            "solref_dampratio": 1.054,
+            "solver_iterations_avg": 1.0,
+            "nan_detected": false,
+            "runtime_ms": 5976.9
+          },
+          "gate_passed": true,
+          "gate_msg": "PASSED: 接触流形数值完全处于良态连续区间",
+          "lyapunov_energy": 63326.0519,
+          "diagnosis": {
+            "round": 0,
+            "diagnosis": "严重静压穿模塌陷 (Penetration=8.59mm >> 0.25mm)；阻尼比处于黄金自锁区间 (ζ=1.05 ∈ [1.2, 2.0])",
+            "hypothesis": "当前刚度 ke=2.50e+03 N/m 匮乏，等效支承弹簧下垂量过大 (δ=mg/ke)",
+            "action_intent": "启动大跨度宏观刚度跃升 (Scale factor ~ 800x)"
+          }
+        },
+        {
+          "round": 1,
+          "ke": 2000000.0,
+          "kd": 4239.584885339602,
+          "telemetry": {
+            "ke": 2000000.0,
+            "kd": 4239.584885339602,
+            "mass_kg": 0.35,
+            "final_z": 0.399782,
+            "penetration_mm": 0.218,
+            "max_dynamic_penetration_mm": 0.278,
+            "rebound_peak_mm": 0.062,
+            "final_vel_z_m_s": 0.00032,
+            "residual_kinetic_energy_uj": 0.02,
+            "solref_timeconst_s": 0.4717,
+            "solref_dampratio": 1.58,
+            "solver_iterations_avg": 1.0,
+            "nan_detected": false,
+            "runtime_ms": 917.7
+          },
+          "gate_passed": true,
+          "gate_msg": "PASSED: 接触流形数值完全处于良态连续区间",
+          "lyapunov_energy": 10.2875,
+          "diagnosis": {
+            "round": 1,
+            "diagnosis": "穿透量完全达标 (Penetration=0.22mm <= 0.25mm)；阻尼比处于黄金自锁区间 (ζ=1.58 ∈ [1.2, 2.0])",
+            "hypothesis": "系统已接近稳态物理鞍点",
+            "action_intent": "保持当前物理收敛配置"
+          }
+        }
+      ]
+    },
+    {
+      "object_name": "不锈钢咖啡杯 (Metal Cup in Tray)",
+      "mass_kg": 0.18,
+      "converged": true,
+      "total_rounds": 2,
+      "final_ke": 312500.0,
+      "final_kd": 1675.8430714121175,
+      "final_penetration_mm": 0.07,
+      "final_dampratio": 1.58,
+      "history": [
+        {
+          "round": 0,
+          "ke": 2500.0,
+          "kd": 100.0,
+          "telemetry": {
+            "ke": 2500.0,
+            "kd": 100.0,
+            "mass_kg": 0.18,
+            "final_z": 0.397698,
+            "penetration_mm": 2.302,
+            "max_dynamic_penetration_mm": 2.628,
+            "rebound_peak_mm": 0.326,
+            "final_vel_z_m_s": 0.00926,
+            "residual_kinetic_energy_uj": 7.71,
+            "solref_timeconst_s": 20.0,
+            "solref_dampratio": 1.054,
+            "solver_iterations_avg": 1.0,
+            "nan_detected": false,
+            "runtime_ms": 1006.6
+          },
+          "gate_passed": true,
+          "gate_msg": "PASSED: 接触流形数值完全处于良态连续区间",
+          "lyapunov_energy": 8580.073,
+          "diagnosis": {
+            "round": 0,
+            "diagnosis": "轻度接触面软塌陷 (Penetration=2.30mm > 0.25mm)；触底微震反弹 (Rebound Peak=0.33mm)",
+            "hypothesis": "刚度已进入亚毫米量级，需执行精细赫兹接触微调；高频恢复冲量未在初始冲击相耗散，存在微弹抖动",
+            "action_intent": "启动基于残差比例尺的精细自适应调整；提升阻尼 kd 锚定临界阻尼比 (Target ζ=1.58)"
+          }
+        },
+        {
+          "round": 1,
+          "ke": 312500.0,
+          "kd": 1675.8430714121175,
+          "telemetry": {
+            "ke": 312500.0,
+            "kd": 1675.8430714121175,
+            "mass_kg": 0.18,
+            "final_z": 0.39993,
+            "penetration_mm": 0.07,
+            "max_dynamic_penetration_mm": 0.147,
+            "rebound_peak_mm": 0.117,
+            "final_vel_z_m_s": 0.00031,
+            "residual_kinetic_energy_uj": 0.01,
+            "solref_timeconst_s": 1.1934,
+            "solref_dampratio": 1.58,
+            "solver_iterations_avg": 1.0,
+            "nan_detected": false,
+            "runtime_ms": 841.2
+          },
+          "gate_passed": true,
+          "gate_msg": "PASSED: 接触流形数值完全处于良态连续区间",
+          "lyapunov_energy": 9.6149,
+          "diagnosis": {
+            "round": 1,
+            "diagnosis": "穿透量完全达标 (Penetration=0.07mm <= 0.25mm)；阻尼比处于黄金自锁区间 (ζ=1.58 ∈ [1.2, 2.0])",
+            "hypothesis": "系统已接近稳态物理鞍点",
+            "action_intent": "保持当前物理收敛配置"
+          }
+        }
+      ]
+    }
+  ]
+}

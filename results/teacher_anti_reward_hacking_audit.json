@@ -1,0 +1,57 @@
+{
+  "static_contract": {
+    "table_top_z": 0.4,
+    "tray_center_xy": [
+      0.62,
+      0.02
+    ],
+    "settle_frames": 20,
+    "max_tilt_deg": 30.0,
+    "gravity": [
+      -0.0,
+      -0.0,
+      -9.8100004196167
+    ],
+    "hands_off_tcp_z": 0.5,
+    "status": "APPROVED"
+  },
+  "physical_realism": {
+    "physical_limits_m": [
+      0.008,
+      0.038
+    ],
+    "final_param_m": 0.0125,
+    "safety_margin_mm": 4.500000000000001,
+    "status": "APPROVED"
+  },
+  "regression_and_stop_gate": {
+    "stop_round": 3,
+    "stop_metrics": {
+      "success_rate": 1.0,
+      "mean_slip_mm": 0.0,
+      "max_slip_mm": 0.0,
+      "unpicked_count": 0
+    },
+    "halt_command_issued": true,
+    "prevented_overfitting_rounds": true,
+    "status": "APPROVED"
+  },
+  "held_out_cross_validation": {
+    "test_seeds": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "metrics": {
+      "success_rate": 1.0,
+      "mean_slip_mm": 0.0,
+      "max_slip_mm": 0.0,
+      "unpicked_count": 0
+    },
+    "generalization_verified": true,
+    "status": "APPROVED"
+  },
+  "overall_status": "CERTIFIED_APPROVED"
+}
